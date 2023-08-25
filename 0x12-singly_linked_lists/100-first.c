@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void first(void)_attribut_((constructor));
+void first(void)_attribute_((constructor));
 
 /**
- * first - prints a sentence befor the main.
+ * first - prints a sentence before the main.
  * function is executed.
  */
 void first(void)
