@@ -11,8 +11,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 { /* Allocate memory for the new node */
 	listint_t *new_node = malloc(sizeof(listint_t));
 
-	if (new_node == NULL) {
-		return NULL;
+	if (new_node == NULL)
+	{
+		(return NULL);
 	}
 
 	/* int the new node */
@@ -20,18 +21,21 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	new_node->next = NULL;
 
 	/* If the list is empty, make the new node the head */
-	if (*head == NULL) {
+	if (*head == NULL)
+	{
 		*head = new_node;
 	}
-	else {
+	else
+	{
 		/* Otherwise, find the last node in the list and add the new node after it */
 		listint_t *last_node = *head;
 
-	while(last_node->next != NULL) {
+	while (last_node->next != NULL)
+	{
 		last_node = last note->next;
 	}
 	last_node->next = new_node;
 	}
 
-	return new_node;
+	(return new_node);
 }
